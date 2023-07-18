@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    /* overflow-x: none; */
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+}
+.navContainer{
+    width: 100vw;
+    height: 60px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    padding: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+}
+#navList{
+    list-style: none;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: #F2EAD3;
+}
+#aItems{
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFD2 ;
+}
+.Items{
+    width: 50%;
+    margin: auto; 
+    /* border: 3px double black; */
+    padding: 1px 10px;
+    background-color: white;
+    box-shadow: 3px 3px 25px rgba(100,43,115,1);
+}
+.Item-1{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 10px;
+}
+.Item-2{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 50px 10px;
+}
+.rightBox{
+    position: relative;
+    transition: all 0.5s linear 0s;
+}
+.rightBox .overlay{
+    position: absolute;
+    color: #F2EAD3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40, 37, 37, 0.799);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s linear 0s;
+
+}
+.rightBox .overlay:hover{
+    opacity: 100%;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.leftBox{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightBox img{
+    height: 350px;
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.5s linear 0s;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.ingBox{
+    font-size: 1.1rem;
+}
+.footer{
+    background-color: #401B4A;
+    height: 50px;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    color:  #F2EAD3;
+    font-size: 2rem;
+    text-align: center;
+  
+}
